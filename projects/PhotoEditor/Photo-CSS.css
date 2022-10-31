@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #333;
+}
+
+.container {
+    background-color: #222;
+    width : 90vw; /* تحديد العرض بالنسبة لعرض الشاشة */
+    height: 92vh; /* تحديد الطول بالنسبة لطول الشاشة */
+    /* الطريقة الثانية انك تعملها هيك بدل البوودي
+    margin : auto ; 
+    */
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    /* حاليا بدي اعمل الصورة على الجنب اليسار و الفلاتر على اليمين */
+    /* حتى اقسم الشاشة لنصين بستعمل الجريد و حتى اخليهم عمودي بستعمل تيمبلت العمود و لو بدي اياهم صفوف فيه تيمبلت للصفوف */
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+
+}
+
+/* حاليا بدي اعمل الصورة على الجنب اليسار و الفلاتر على اليمين */
+
+/*  بامكانك تحط الوان و صورة تجريبية عشان
+ تقدر تتاكد انه السي اس اس شغال مثل ما انت بدك
+ , يعني في البداية حطينا اللون احمر و ازرق عشان اقدر
+ اشوف هل وصلت للتنسيق الي بدي اياه من ناحية الترتيب او لا */
+
+
+.img { 
+    /* عشان اقدر اجيب الصورة فوق و كبسة الابلود تحت */ 
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    /* عشان اخلي الصورة و اللابل في النص */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* شرح الكانفاس موجود في ملف الجافا سكريبت
+*/
+
+.img img, canvas {
+
+    /* لانه ما بعرف كم حجم الصورة الي رح يدخلها المستخدم فلازم احدد اقصى عرض و ارتفاع للصورة */
+    max-width : 60vw; /* تحديد العرض بالنسبة لعرض الشاشة */
+    max-height: 80vh; /* تحديد الطول بالنسبة لطول الشاشة */
+}
+
+
+.upload input {
+    display: none; /* بدي اخفي الكبسة لانها رح تظهر معي في اللابل */
+
+}
+
+.upload label {
+    color: #fff;
+    padding: 8px 20px;
+    border: 2px #fff dashed;
+    cursor: pointer;
+
+}
+
+.filters ul {
+    /* عشان تخلي عناصر القائمة الرئيسية مرتبين تحت بعض و بينهم فراغ او جااب */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* حتى اغير اتجاه الكتابة و اتجاه الرينج و الزيادة من اليمين لليسار */
+    direction: rtl;
+
+}
+
+.filters ul li {
+    /* عشان تخلي عناصر القوائم الداخلية مرتبين تحت بعض و بينهم جاب بدل ما يكونوا جنب بعض */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.filters ul li label {
+    color: #fff;
+}
+
+.filters ul li input {
+    cursor: pointer;
+}
+
+/* لما تحط لاست تشايل او اخر طفل يعني اخر اشي انذكر في القائمة */
+
+.filters ul li:last-child {
+    display: flex;
+    flex-direction: row;
+}
+
+#download {
+    background-color: green;
+    color: #fff;
+    padding: 8px 20px;
+    cursor: pointer;
+    max-width: 80px;
+    max-height: 20px;
+    transition: 0.7s ease;
+
+}
+
+#download:hover {
+    transform: scale(1.1);
+    background-color: rgb(0, 99, 0);
+}
+
+.filters ul li span {
+    background-color: green;
+    color: #fff;
+    padding: 8px 20px;
+    cursor: pointer;
+    max-width: 80px;
+    max-height: 20px;
+    transition: 0.7s ease;   
+}
+
+.filters ul li span:hover {
+    transform: scale(1.1);
+    background-color: rgb(0, 99, 0);
+}
+
+
+/* هادا الكود الي تحت حتى تعمل ريسبونسيف للموقع تبعك بحيث يكون مقروء بشكل
+واضح على كل الشاشات سواء كان لابتوب او تاب او تلفون بغض النظر عن نوعه */
+
+
+@media screen and (max-width : 650px) {
+
+    /* بدك تغيير الابعاد تبعت العناصر حتى تكون متناسقة */
+    .container {
+        grid-template-columns: 1fr;
+        gap : 50px;
+        width : 80vw; 
+        height: 130vh;
+    } 
+    .canvas {
+        width: 20vw;
+        height: 30vh;
+    }   
+}
+
+@media screen and (max-width : 820px) {
+
+    /* بدك تغيير الابعاد تبعت العناصر حتى تكون متناسقة */
+    .container {
+        grid-template-columns: 2fr;
+        gap : 30px;
+        width : 80vw; 
+        height: 100vh;
+    }   
+    .canvas {
+        width: 20vw;
+        height: 30vh;
+    } 
+      
+}
+
+@media screen and (max-width : 912px) {
+
+    /* بدك تغيير الابعاد تبعت العناصر حتى تكون متناسقة */
+    .container {
+        grid-template-columns: 2.5fr;
+        gap : 20px;
+        width : 80vw; 
+        height: 100vh;
+    }  
+    .canvas {
+        width: 20vw;
+        height: 30vh;
+    } 
+       
+}
+
+@media screen and (max-width : 1024px) {
+
+    /* بدك تغيير الابعاد تبعت العناصر حتى تكون متناسقة */
+    .container {
+        grid-template-columns: 2fr;
+        gap : 20px;
+        width : 60vw; 
+        height: 130vh;
+    }
+    .canvas {
+        width: 20vw;
+        height: 30vh;
+    } 
+     
+}

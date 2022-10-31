@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Photo-CSS.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- الموقع هادا عبارة عن ديف بحتوي على نصين واحد للصورة و الثاني للفلاتر -->
+    <div class="container">
+        <div class="img">
+            <!-- الديف تبع الصورة رح ينقسم لجزئين جزءرح يكون فيه الصورة نفسها و جزء رح يكون فيه الكبسة الي رح اعمل من خلالها ادخال للصورة -->
+            <div class="img-box">
+                <!-- حط صورة للتجريب حتى تتاكد و لكن فعليا انت رح تدخلها بالجافا سكريبت -->
+                <img id="img">
+                <canvas id="canvas"></canvas>
+                <!-- هادا الكانفاس بنشرح باخر جزء من المشروع لما تحط كبسة التحميل -->
+                
+            </div>
+            <div class="upload">
+                <label for="upload">Upload</label>
+                <input type="file" id="upload">
+            </div>
+        </div>
+        
+        <div class="filters">
+            <!-- حاليا انا محتاج اعمل 7 فلاتر و كلهم ادخال من نظام السحب او الرينج -->
+            <!-- ال7 فلاتر رح يكونوا عبارة عن قائمة(ليست) وكل ليست في الادخال و اسم الفيلتر -->
+            <ul>
+
+                <li>
+                    <label for="saturate">Saturate</label>
+                    <input type="range" id="saturate" min="0" max="200" value="100">
+                </li>
+
+                <li>
+                    <label for="contrast">Contrast</label>
+                    <input type="range" id="contrast" min="0" max="200" value="100">
+                </li>
+
+                <li>
+                    <label for="brightness">Brightness</label>
+                    <input type="range" id="brightness" min="0" max="200" value="100">
+                </li>
+
+                <li>
+                    <label for="sepia">Sepia</label>
+                    <input type="range" id="sepia" min="0" max="200" value="0">
+                </li>
+
+                <!-- في الفيلتر الرمادي اقصى قيمة هي 1 عشان هيك بدي اغير مقدار القفزة فبحط 
+                    الستيب تبعتي 0.1 و طبعا هي الديفولت تبعها 1 فلازم اغيرها حتى يصير عندي تدرج -->
+                <li>
+                    <label for="grayscale">Grayscale</label>
+                    <input type="range" id="grayscale" step="0.1" min="0" max="1" value="0">
+                </li>
+
+                <li>
+                    <label for="blur">Blur</label>
+                    <input type="range" id="blur" step="0.1" min="0" max="10" value="0">
+                </li>
+
+                <li>
+                    <label for="hue-rotate">Hue-Rotate</label>
+                    <input type="range" id="hue-rotate" min="0" max="350" value="0">
+                </li>
+
+                <li class="buttons">
+                    <!-- بدي احط بهاي الليست كبستين وهم كبسة التحميل و كبسة اعادة التعديلات لديفولات تبعها
+                    الي هي كبسة ال(الريست) -->
+                    <a download="pic" id="download">Download</a> <!--رح تستعمل الجافا سكريبت عشان تحدد الرابط-->
+                    <span id="reset">Reset</span> <!--رح تستعمل الجافا سكريبت برضو حتى ترجع التعديلات للديفولت-->   
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="Photo-editor-code.js"></script>
+</body>
+</html>

@@ -1,0 +1,546 @@
+#training {
+    font-size: 20px;
+    padding-top: 45px; 
+}
+
+#master {
+    font-size: 19.5px;
+    padding-top: 40px;
+}
+
+#bachelor {
+    font-size: 16px;
+    padding-top: 25px;
+}
+
+
+#high-school {
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+
+
+/*                                            Make My Website Responsive :                                */
+/*                                            Make My Website Responsive :                                */
+/*                                            Make My Website Responsive :                                */
+/*                                            Make My Website Responsive :                                */
+
+
+
+
+@media screen and (min-device-width:1331px) and (max-device-width:1420px) {
+
+    #home {
+        min-height: 100vh;
+        background-image: url(../img/MyPicture.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+}
+
+@media screen and (max-device-width:1330px) {
+
+    #home {
+            min-height: 100vh;
+            background-image: url(../img/ForSmallScreen.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+    }
+
+    #myname {
+        font-size: 50px;
+    }
+
+    #JobPosition {
+        font-size: 40px;
+    }
+
+    #objective {
+        width: 30%;
+    }
+
+    #call-button {
+        margin-left: 60px;
+        margin-top: 50px;
+        display: block;
+        width: 210px;
+    }
+    
+}
+
+@media screen and (max-device-width:1200px) {
+
+    #education .flex-container .stages-education {
+        margin-left: auto;
+        margin-right:auto ;
+    }
+
+    #projects .flex-container .my-projects {
+        margin-left: auto;
+        margin-right:auto ;
+    }
+
+    #myname {
+        font-size: 45px;
+    }
+
+
+}
+
+@media screen and (max-device-width:1010px) {
+
+    .my-experience {
+        height: 30vh;
+    }
+
+    #myname {
+        font-size: 40px;
+    }
+
+    #JobPosition {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-device-width:950px) {
+
+        .nav-icon, #du-en {
+            font-size: 18px;
+        }
+
+        #projects .flex-container{
+            width: 94%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-left: auto;
+            margin-right:auto ;
+        }
+
+        #myname {
+            font-size: 35px;
+        }
+
+        #JobPosition {
+            font-size: 25px;
+        }
+
+}
+
+@media screen and (max-device-width:912px) {
+
+    .my-experience {
+        height: 20vh;
+    }
+
+}
+
+
+@media screen and (max-device-width:870px) {
+
+    .nav-icon, #du-en {
+        margin-right: 15px;
+        font-size: 16px;
+    }
+
+    #myname {  
+        width: 50%;
+    }
+    
+    #JobPosition {
+        width: 50%;
+    }
+
+    #skills .flex-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #call-button {
+        font-size: 18px;
+        width: 180px;
+    }
+
+
+}
+
+@media screen and (max-device-width:820px) {
+
+    .my-experience {
+        height: 30vh;
+
+    }
+
+}
+
+
+@media screen and (max-device-width:795px) {
+
+
+    .name-job-objective {
+        position: relative;
+        right: 35px;
+        bottom: 65px;
+    }
+
+    #objective {
+        font-size: 15px;
+    }
+
+    #objective span {
+        font-size: 35px !important;
+    }
+
+    #call-button {
+        padding: 10px;
+        font-size: 18px;
+        width: 170px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-device-width:790px) {
+
+    .my-experience {
+        height: 35vh;
+    }
+
+    #call-button {
+        font-size: 18px;
+        width: 150px;
+        margin-top: 0px ;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media screen and (max-device-width:744px) {
+
+    .my-experience {
+        height: 45vh;
+    }
+
+}
+
+@media screen and (max-device-width:730px) {
+
+
+    #education .flex-container {
+        flex-direction: column;
+    }
+
+    #education .flex-container .stages-education {
+        margin-bottom: 15px;
+    }
+
+    #skills .flex-container {
+        display: none;
+    }
+
+    #skills .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        position: relative;
+        right: 115px;
+        font-size: 15px;
+        padding-bottom: 200px;
+        margin-bottom: -25px;
+    }
+
+}
+
+@media screen and (max-device-width:712px) {
+
+    .my-experience {
+        height: 50vh;
+    }
+
+    .nav-icon {
+        margin-top: 20px;
+        margin-right: 15px;
+        font-size: 11px;
+    }
+
+    #call-button {
+        font-size: 12px;
+        width: 115px;
+        margin-left: 10px;
+        margin-top: -55px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-device-width:665px) {
+
+
+    #objective {
+        font-size: 12px;
+    }
+
+    #qoutes {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-device-width:654px) {
+
+    .my-experience {
+        height: 55vh;
+    }
+
+}
+
+
+@media screen and (max-device-width:600px) {
+
+    #flex-container-column{
+        flex-direction: column;
+        width: 94vw;
+        flex-wrap: nowrap;
+        margin-right: 50px;
+        margin-bottom: 500px;
+        height: 40vh;
+    }
+
+    #skills .grid-container {
+       padding-left: 75px;
+    }
+
+    .navbar-large-screen {
+        display: none;
+    }
+
+    #for-small-screens {
+        display: block;
+    }
+
+    .bg-dark {
+        --bs-bg-opacity: 1;
+        background-color: #00001f !important;
+        height : 60px;
+    }
+
+    .navbar-collapse {
+        background-color: #00001f !important;
+        width: 200px;
+        padding-left: 15px;
+        border: #00001f;
+    }
+
+    .navbar-toggler {
+        background-color: rgb(137, 110, 0);
+    }
+
+    li:hover {
+        text-decoration: underline;
+        background-color: rgb(137, 110, 0);
+    }
+
+    #grid-container-one-column i {
+        margin-left: 30px;
+    }
+
+    #contact-with-me {
+        font-size: 22px;
+    }
+
+}    
+
+@media screen and (max-device-width:545px) {
+
+    #flex-container-column .my-experience {
+        width: 400px;
+        margin-left: 70px;
+    }
+
+    #grid-container-one-column i {
+        margin-left: 5px;
+    }
+
+}
+
+@media screen and (max-device-width:500px) {
+
+    .name-job-objective {
+        position: absolute;
+        position: relative;
+        right: 50px;
+    }
+
+    #JobPosition {
+        font-size: 20px;
+    }
+
+    #objective {
+        font-size: 10px;
+    }
+
+
+}
+
+@media screen and (max-device-width:467px) {
+
+    #grid-container-one-column i {
+        margin-left: 0px;
+    }
+
+    #flex-container-column .my-experience {
+        width: 340px;
+    }
+
+    #projects {
+        position: relative;
+        top: 150px;
+    }
+
+    #skills {
+        position: relative;
+        top: 140px;
+    }
+
+    .grid-container div span {
+        font-size: 15px;
+    }
+
+    .skills-logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    #contact {
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    #contact .grid-container {
+        display: none;
+    }
+
+    #grid-container-one-column {
+        display: block;
+    }
+
+    #grid-container-one-column i {
+        margin-top: 20px;
+    }
+
+    #grid-container-one-column div a {
+        font-size: 35px;
+    }
+
+    #flex-container-column .my-experience {
+        width: 300px;
+        margin-left: 70px;
+        height: 60vh;
+    }
+
+}
+
+@media screen and (max-device-width:400px) {
+
+    #flex-container-column .my-experience {
+        margin-left: 40px;
+    }
+
+    #skills .grid-container {
+        padding-left: 60px;
+    }
+
+
+}
+
+@media screen and (min-device-width:281px) and (max-device-width:360px) {
+
+
+    body {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 124.5%;
+    }
+
+    #home {
+        background-image: url(../img/screen280.jpg);
+    }
+
+    #objective {
+        font-size: 6px;
+    }
+
+    .stages-education {
+        transform: scale(0.8);
+        position: absolute;
+        position: relative;
+        left: 10px;
+    }
+
+    .my-experience {
+        position: relative;
+        right: -42px;
+        transform: scale(0.8);
+        margin: auto;
+    }
+
+    .my-projects {
+        transform: scale(0.8);
+    }
+
+    #skills .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 180px;
+    }
+}
+
+@media screen and (max-device-width:280px){
+
+
+    body {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 124.5%;
+    }
+
+    #home {
+        background-image: url(../img/screen280.jpg);
+    }
+
+    #objective {
+        font-size: 6px;
+    }
+
+    .stages-education {
+        transform: scale(0.8);
+        position: absolute;
+        position: relative;
+        left: 10px;
+    }
+
+    .my-experience {
+        position: relative;
+        left: 1px;
+        transform: scale(0.8);
+        margin: auto;
+    }
+
+    .my-projects {
+        transform: scale(0.8);
+    }
+
+    #skills .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 135px;
+    }
+}

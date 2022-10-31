@@ -1,0 +1,995 @@
+/*                                             Let's make somehting for all desgin:                            */
+/*                                             Let's make somehting for all desgin:                            */
+
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(0,0,31);
+    background: linear-gradient(180deg, rgba(0,0,31,1) 18%, rgba(0,29,69,1) 38%, rgba(0,60,88,1) 58%, rgb(0, 121, 197) 78%, rgb(234, 234, 234) 100%);
+}
+
+
+
+/*                                             Let's Design Header Now:                            */
+/*                                             Let's Design Header Now:                            */
+/*                                             Let's Design Header Now:                            */
+/*                                             Let's Design Header Now:                            */
+
+header {
+    width: 100%;
+    background-color: rgba(0,0,31,1);
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    z-index: 999;
+    position: fixed;
+}
+
+#my-logo img {
+    height: 60px;
+}
+
+#for-small-screens {
+    display: none;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-icon{
+    margin: 15px;
+    margin-right: 35px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#du-en {
+    position: relative;
+    right: 10px;
+    margin: auto;
+    font-size: 20px;
+    background-color: rgb(177, 142, 0);
+}
+
+#du-en:hover {
+    text-decoration: underline;
+    color : rgba(0,0,31,1);
+}
+
+.nav-icon:hover {
+    color: rgb(177, 142, 0) ;
+}
+
+
+
+/*                                             Let's Design Home Page Now:                            */
+/*                                             Let's Design Home Page Now:                            */
+/*                                             Let's Design Home Page Now:                            */
+/*                                             Let's Design Home Page Now:                            */
+
+
+
+#home {
+    height: 100vh;
+    background-image: url(img/MyPicture.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.name-job-objective {
+    padding-top: 50px;
+    margin-left: 55px;
+    width: 90%;
+    color: white;
+    font-family: 'Fredoka One', 'cursive', sans-serif, serif, 'Times New Roman', Times, serif;
+}
+
+#myname {  
+    padding-top: 150px;
+    font-size: 65px;
+}
+
+#JobPosition {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+}
+
+#objective {
+    width: 60%;
+    font-size: 18px;
+}
+
+#call-button{
+    font-family: 'Dancing Script', 'cursive;', sans-serif;
+    text-decoration: none;
+    color: rgb(0,0,31);
+    letter-spacing: 1px;
+    margin-left: 730px;
+    font-weight: 400;
+    font-size: 1.6em;
+    background-color:  rgb(177, 142, 0);
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.7s ease;
+}
+
+#call-button:hover{
+    background-color: rgb(217, 237, 255); 
+    color: rgb(0,0,31); 
+    transform: scale(1.2);  
+}
+
+#section-gradient-color {
+    background: rgb(0,0,31);
+    background: linear-gradient(180deg, rgba(0,0,31,1) 18%, rgba(0,29,69,1) 38%, rgba(0,60,88,1) 58%, rgba(0,69,113,1) 78%, rgba(0,100,164,1) 100%);
+    background-size: cover;
+    background-position: center;
+    padding-top: 150px;
+    width: 100%;
+}
+
+
+/*                                             Let's Design Title of Sections Now:                            */
+/*                                             Let's Design Title of Sections Now:                            */
+
+
+.main-sections {
+    border-radius: 20px;
+    width: 250px;
+    height: 75px;
+    color: rgb(177, 142, 0);
+    text-align: center;
+    width: 350px;
+    margin: auto;  
+    font-size: 30px;
+    padding-top: 15px;
+    font-family: 'Graduate', 'cursive', sans-serif;
+}
+
+
+/*                                             Let's Design Education Now:                            */
+/*                                             Let's Design Education Now:                            */
+/*                                             Let's Design Education Now:                            */
+/*                                             Let's Design Education Now:                            */
+
+
+#container-my-education-stages {
+    margin-top: 100px;
+    padding: 15px;
+
+}
+
+.stages-education {
+    border: 2px solid rgb(177, 142, 0);
+    text-align: center;
+    font-weight: bold;
+    transition: 0.7s ease;
+    color: white;
+}
+
+.stages-education:hover {
+    transform: scale(1.2);
+}
+
+.stages-education:hover .font-awesome  {
+    color: rgb(218, 0, 138);
+}
+
+.stages-education > span {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    color: rgb(177, 142, 0);
+}
+
+.font-awesome {
+    color: white; 
+    font-size: 18px;
+}
+
+#training {
+    height: 250px;
+    width: 250px;
+    border-radius: 125px;
+    font-size: 22px;
+    padding-top: 35px; 
+    margin-left: 200px;
+}
+
+#master {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    font-size: 21px;
+    padding-top: 10px;
+    margin-top: 35px; 
+}
+
+#bachelor {
+    height: 150px;
+    width: 150px;
+    border-radius: 750px;
+    font-size: 18px;
+    padding-top: 18px;
+    margin-top: 70px; 
+}
+
+
+#high-school {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    font-size: 15px;
+    padding-top: 10px;
+    margin-right: 200px;
+    margin-top: 110px; 
+}
+
+
+
+/*                                             Let's Design Experiences Now:                            */
+/*                                             Let's Design Experiences Now:                            */
+/*                                             Let's Design Experiences Now:                            */
+/*                                             Let's Design Experiences Now:                            */
+
+
+
+.my-experience{
+    margin: 50px;
+    padding: 15px;
+    width: 500px;
+    height: 300px;
+    border: 2px solid rgb(177, 142, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+}
+
+.job-description {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+/*                                             Let's Design Projects Now:                            */
+/*                                             Let's Design Projects Now:                            */
+/*                                             Let's Design Projects Now:                            */
+/*                                             Let's Design Projects Now:                            */
+
+
+
+h4 {
+    text-align: center;
+}
+
+.my-projects{
+    margin: 50px;
+    width: 300px;
+    height: 330px;
+    border: 2px solid rgb(177, 142, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    transition: 0.7s ease;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.my-projects:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px black;
+    opacity: 1;
+}
+
+.projects-images {
+    width: 295px;
+    height: 175px;
+    border-radius: 47px 47px 0px 0px;
+}
+
+.my-projects a {
+    color: rgb(177, 142, 0);
+}
+
+
+.project-name {
+    text-decoration: none;
+    color: white !important ;
+}
+
+.my-projects a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+
+/*                                             Let's Design Skills Now:                            */
+/*                                             Let's Design Skills Now:                            */
+/*                                             Let's Design Skills Now:                            */
+/*                                             Let's Design Skills Now:                            */
+
+
+.skills-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    transition: 0.7s ease;
+}
+
+.my-skills {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    transition: 0.7s ease;
+}
+
+.skills-logo:hover {
+    transform: scale(1.2);
+}
+
+
+.first-line-skills {
+    margin: 100px;
+    margin-bottom: 25px;
+}
+
+.mid-line-skills {
+    margin: auto;
+}
+
+.end-line-skills {
+    margin: 100px;
+    margin-top: 25px;
+}
+
+.anch-decoration {
+    text-decoration: none;
+}
+      
+.dropdown-skills {
+    position: relative;
+    display: inline-block;
+}
+      
+.dropdown-content-skills {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+      
+.dropdown-content-skills a {
+    color: rgb(177, 142, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+
+.icon-soft-skill {
+    display: inline;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+        
+.dropdown-content-skills a:hover {background-color: rgb(0,0,31);}
+.dropdown-skills:hover .dropdown-content-skills {display: block;}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 70px;
+    font-size: 50px;
+}
+
+#grid-container-one-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 50px;
+    font-size: 20px;
+    text-align: center;
+    display: none;
+}
+
+#skills .grid-container {
+    display: none;
+}
+
+
+
+/*                                             Let's Design Footer Now:                            */
+/*                                             Let's Design Footer Now:                            */
+/*                                             Let's Design Footer Now:                            */
+/*                                             Let's Design Footer Now:                            */
+
+
+#contact {
+    padding-bottom: 35px;
+    background: rgb(0, 25, 41);
+}
+
+
+#qoutes {
+    font-family: 'Dancing Script', 'cursive;', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 25px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+.links {
+    transition: 0.7s ease;
+} 
+
+
+#grid-container div i {
+    font-size: 27px;
+}
+
+.links:hover{
+    transform: scale(1.3);
+}
+
+.fa-whatsapp:hover {
+    color: rgb(0, 218, 0) !important;
+}
+
+.fa-envelope:hover {
+    color: rgb(218, 0, 138) !important;
+}
+
+.fa-linkedin:hover {
+    color: rgb(0, 128, 255) !important;
+}
+
+.fa-github:hover {
+    color: rgb(0, 0, 0);
+}
+
+
+
+/*                                            Make My Website Responsive :                                */
+/*                                            Make My Website Responsive :                                */
+/*                                            Make My Website Responsive :                                */
+/*                                            Make My Website Responsive :                                */
+
+
+
+@media screen and (min-device-width:1331px) and (max-device-width:1420px) {
+
+    #home {
+        min-height: 100vh;
+        background-image: url(img/MyPicture.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+}
+
+@media screen and (max-device-width:1330px) {
+
+    #home {
+            min-height: 100vh;
+            background-image: url(img/ForSmallScreen.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+    }
+
+    #myname {
+        font-size: 50px;
+    }
+
+    #JobPosition {
+        font-size: 40px;
+    }
+
+    #objective {
+        width: 30%;
+    }
+
+    #call-button {
+        margin-left: 60px;
+        margin-top: 50px;
+        display: block;
+        width: 155px;
+    }
+    
+}
+
+@media screen and (max-device-width:1200px) {
+
+    #education .flex-container .stages-education {
+        margin-left: auto;
+        margin-right:auto ;
+    }
+
+    #projects .flex-container .my-projects {
+        margin-left: auto;
+        margin-right:auto ;
+    }
+
+    #myname {
+        font-size: 45px;
+    }
+
+
+}
+
+@media screen and (max-device-width:1010px) {
+
+    .my-experience {
+        height: 30vh;
+    }
+
+    #myname {
+        font-size: 40px;
+    }
+
+    #JobPosition {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-device-width:950px) {
+
+        .nav-icon, #du-en {
+            font-size: 18px;
+        }
+
+        #projects .flex-container{
+            width: 94%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-left: auto;
+            margin-right:auto ;
+        }
+
+        #myname {
+            font-size: 35px;
+        }
+
+        #JobPosition {
+            font-size: 25px;
+        }
+
+}
+
+@media screen and (max-device-width:912px) {
+
+    .my-experience {
+        height: 20vh;
+    }
+
+}
+
+
+@media screen and (max-device-width:870px) {
+
+    .nav-icon, #du-en {
+        margin-right: 15px;
+        font-size: 16px;
+    }
+
+    #myname {  
+        width: 50%;
+    }
+    
+    #JobPosition {
+        width: 50%;
+    }
+
+    #skills .flex-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #call-button {
+        font-size: 18px;
+        width: 125px;
+    }
+
+
+}
+
+@media screen and (max-device-width:820px) {
+
+    .my-experience {
+        height: 30vh;
+
+    }
+
+}
+
+
+@media screen and (max-device-width:795px) {
+
+
+    .name-job-objective {
+        position: relative;
+        right: 35px;
+        bottom: 65px;
+    }
+
+    #objective {
+        font-size: 15px;
+    }
+
+    #objective span {
+        font-size: 35px !important;
+    }
+
+    #call-button {
+        padding: 10px;
+        font-size: 18px;
+        width: 115px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-device-width:790px) {
+
+    .my-experience {
+        height: 35vh;
+    }
+
+    #call-button {
+        font-size: 18px;
+        width: 115px;
+        margin-top: 0px ;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media screen and (max-device-width:744px) {
+
+    .my-experience {
+        height: 45vh;
+    }
+
+}
+
+@media screen and (max-device-width:730px) {
+
+
+    #education .flex-container {
+        flex-direction: column;
+    }
+
+    #education .flex-container .stages-education {
+        margin-bottom: 15px;
+    }
+
+    #skills .flex-container {
+        display: none;
+    }
+
+    #skills .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        position: relative;
+        right: 90px;
+        font-size: 15px;
+        padding-bottom: 200px;
+        margin-bottom: -25px;
+    }
+
+}
+
+@media screen and (max-device-width:712px) {
+
+    .my-experience {
+        height: 50vh;
+    }
+
+    .nav-icon {
+        margin-top: 20px;
+        margin-right: 15px;
+        font-size: 11px;
+    }
+
+    #call-button {
+        font-size: 12px;
+        width: 80px;
+        margin-left: 10px;
+        margin-top: -45px;
+    }
+}
+
+
+@media screen and (max-device-width:665px) {
+
+
+    #objective {
+        font-size: 12px;
+    }
+
+    #qoutes {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-device-width:654px) {
+
+    .my-experience {
+        height: 55vh;
+    }
+
+}
+
+
+@media screen and (max-device-width:600px) {
+
+    #flex-container-column{
+        flex-direction: column;
+        width: 94vw;
+        flex-wrap: nowrap;
+        margin-right: 50px;
+        margin-bottom: 500px;
+        height: 40vh;
+    }
+
+    #skills .grid-container {
+       padding-left: 75px;
+    }
+
+    .navbar-large-screen {
+        display: none;
+    }
+
+    #for-small-screens {
+        display: block;
+    }
+
+    .bg-dark {
+        --bs-bg-opacity: 1;
+        background-color: #00001f !important;
+        height : 60px;
+    }
+
+    .navbar-collapse {
+        background-color: #00001f !important;
+        width: 200px;
+        padding-left: 15px;
+        border: #00001f;
+    }
+
+    .navbar-toggler {
+        background-color: rgb(137, 110, 0);
+    }
+
+    li:hover {
+        text-decoration: underline;
+        background-color: rgb(137, 110, 0);
+    }
+
+    #grid-container-one-column i {
+        margin-left: 30px;
+    }
+
+    #contact-with-me {
+        font-size: 22px;
+    }
+
+}    
+
+@media screen and (max-device-width:545px) {
+
+    #flex-container-column .my-experience {
+        width: 400px;
+        margin-left: 70px;
+    }
+
+    #grid-container-one-column i {
+        margin-left: 5px;
+    }
+
+}
+
+@media screen and (max-device-width:500px) {
+
+    .name-job-objective {
+        position: absolute;
+        position: relative;
+        right: 50px;
+    }
+
+    #JobPosition {
+        font-size: 20px;
+    }
+
+    #objective {
+        font-size: 10px;
+    }
+
+
+}
+
+@media screen and (max-device-width:467px) {
+
+    #grid-container-one-column i {
+        margin-left: 0px;
+    }
+
+    #flex-container-column .my-experience {
+        width: 340px;
+    }
+
+    #projects {
+        position: relative;
+        top: 150px;
+    }
+
+    #skills {
+        position: relative;
+        top: 140px;
+    }
+
+    .grid-container div span {
+        font-size: 15px;
+    }
+
+    .skills-logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    #contact {
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    #contact .grid-container {
+        display: none;
+    }
+
+    #grid-container-one-column {
+        display: block;
+    }
+
+    #grid-container-one-column i {
+        margin-top: 20px;
+    }
+
+    #grid-container-one-column div a {
+        font-size: 35px;
+    }
+
+    #flex-container-column .my-experience {
+        width: 300px;
+        margin-left: 70px;
+        height: 60vh;
+    }
+
+}
+
+@media screen and (max-device-width:400px) {
+
+    #flex-container-column .my-experience {
+        margin-left: 40px;
+    }
+
+    #skills .grid-container {
+        padding-left: 60px;
+    }
+
+
+}
+
+@media screen and (min-device-width:281px) and (max-device-width:360px) {
+
+
+    body {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 124.5%;
+    }
+
+    #home {
+        background-image: url(img/screen280.jpg);
+    }
+
+    #objective {
+        font-size: 6px;
+    }
+
+    .stages-education {
+        transform: scale(0.8);
+        position: absolute;
+        position: relative;
+        left: 10px;
+    }
+
+    .my-experience {
+        position: relative;
+        right: 25px;
+        transform: scale(0.8);
+        margin: auto;
+    }
+
+    .my-projects {
+        transform: scale(0.8);
+    }
+
+    #skills .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 180px;
+    }
+}
+
+@media screen and (max-device-width:280px){
+
+
+    body {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 124.5%;
+    }
+
+    #home {
+        background-image: url(img/screen280.jpg);
+    }
+
+    #objective {
+        font-size: 6px;
+    }
+
+    .stages-education {
+        transform: scale(0.8);
+        position: absolute;
+        position: relative;
+        left: 10px;
+    }
+
+    .my-experience {
+        position: relative;
+        left: 1px;
+        transform: scale(0.8);
+        margin: auto;
+    }
+    
+    #projects {
+        position: relative;
+        top: -125px;
+    }
+
+    .my-projects {
+        transform: scale(0.8);
+    }
+
+    #skills {
+        position: relative;
+        top: -105px;
+    }
+
+    #skills .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 135px;
+    }
+}
