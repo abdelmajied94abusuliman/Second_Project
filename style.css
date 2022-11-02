@@ -951,6 +951,11 @@ h4 {
         bottom: 200px;
     }
 
+    .progress-skills a img {
+        margin-top: 35px;
+        margin-left: 55px;
+    }
+
     #skills .grid-container {
         padding-bottom: 20px;
         position: relative;
@@ -1065,6 +1070,11 @@ h4 {
         width: 80px;
         height: 80px;
         border-radius: 40px;
+        margin-left: 65px;
+    }
+
+    .my-skills {
+        padding-left: 10px;
     }
 
 }
