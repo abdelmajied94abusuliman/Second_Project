@@ -30,15 +30,24 @@ header {
 
 #my-logo img {
     height: 60px;
+    margin-left: 35px;
 }
 
 #for-small-screens {
     display: none;
 }
 
+.offcanvas-body {
+    background-color: #00001f;
+}
+
+.offcanvas-header {
+    background-color: #00001f;
+}
+
 .flex-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .nav-icon{
@@ -62,8 +71,13 @@ header {
     color : rgba(0,0,31,1);
 }
 
-.nav-icon:hover {
+.nav-item:hover {
     color: rgb(177, 142, 0) ;
+}
+
+.btn-outline-success {
+    color: rgb(177, 142, 0);
+    border-color: rgb(177, 142, 0);
 }
 
 
@@ -99,6 +113,8 @@ header {
 #JobPosition {
     font-family: 'Open Sans', sans-serif;
     font-size: 50px;
+    width: 600px;
+    display: inline-block;
 }
 
 #objective {
@@ -107,11 +123,13 @@ header {
 }
 
 #call-button{
+    display: inline-block;
     font-family: 'Dancing Script', 'cursive;', sans-serif;
     text-decoration: none;
     color: rgb(0,0,31);
     letter-spacing: 1px;
-    margin-left: 730px;
+    margin-left: 50px;
+    margin-top: 50px;
     font-weight: 400;
     font-size: 1.6em;
     background-color:  rgb(177, 142, 0);
@@ -123,7 +141,7 @@ header {
 #call-button:hover{
     background-color: rgb(217, 237, 255); 
     color: rgb(0,0,31); 
-    transform: scale(1.2);  
+    transform: scale(1.1);  
 }
 
 #section-gradient-color {
@@ -270,8 +288,8 @@ h4 {
 
 .my-projects{
     margin: 50px;
-    width: 300px;
-    height: 330px;
+    width: 33vw;
+    height: 53vh;
     border: 2px solid rgb(177, 142, 0);
     color: rgb(255, 255, 255);
     border-radius: 50px;
@@ -281,15 +299,16 @@ h4 {
 }
 
 .my-projects:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 0px 0px 20px black;
     opacity: 1;
 }
 
 .projects-images {
-    width: 295px;
-    height: 175px;
+    width: 27vw;
+    height: 33vh;
     border-radius: 47px 47px 0px 0px;
+    margin-bottom: 3%;
 }
 
 .my-projects a {
@@ -307,16 +326,48 @@ h4 {
     color: white;
 }
 
+.my-projects p {
+    margin: 10px;
+}
+
+
 
 /*                                             Let's Design Skills Now:                            */
 /*                                             Let's Design Skills Now:                            */
 /*                                             Let's Design Skills Now:                            */
 /*                                             Let's Design Skills Now:                            */
 
+
+
+#progress-container {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: 200px 200px 200px;
+    gap: 5vw;
+    padding-left: 15vw;
+    padding-top: 50px;
+}
+
+.progress-skills {
+    background-color: rgb(0, 0, 75) ;
+    border: 2px solid rgb(177, 142, 0) ;
+    border-radius: 15px;
+}
+
+.progress-skills a img {
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+.progress-skills a span {
+    display: block;
+    width : 200px;
+    text-align: center;
+}
 
 .skills-logo {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     border-radius: 35px;
     transition: 0.7s ease;
 }
@@ -328,23 +379,8 @@ h4 {
     transition: 0.7s ease;
 }
 
-.skills-logo:hover {
-    transform: scale(1.2);
-}
-
-
-.first-line-skills {
-    margin: 100px;
-    margin-bottom: 25px;
-}
-
-.mid-line-skills {
-    margin: auto;
-}
-
-.end-line-skills {
-    margin: 100px;
-    margin-top: 25px;
+.progress-skills:hover {
+    transform: scale(1.1);
 }
 
 .anch-decoration {
@@ -361,24 +397,32 @@ h4 {
     position: absolute;
     right: 0;
     background-color: #f9f9f9;
-    min-width: 250px;
+    min-width: 300px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
       
 .dropdown-content-skills a {
     color: rgb(177, 142, 0);
-    padding: 12px 16px;
     text-decoration: none;
     display: inline-block;
+    position: relative;
     width: 100%;
 }
 
+.partial-skills {
+    display: inline-block;
+    margin-left: -40px;
+}
+
 .icon-soft-skill {
+    position: relative;
+    bottom: 15px;
+    right: 40px;
     display: inline;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
 }
         
 .dropdown-content-skills a:hover {background-color: rgb(0,0,31);}
@@ -412,6 +456,7 @@ h4 {
 /*                                             Let's Design Footer Now:                            */
 /*                                             Let's Design Footer Now:                            */
 /*                                             Let's Design Footer Now:                            */
+
 
 
 #contact {
@@ -469,7 +514,7 @@ h4 {
 
 
 
-@media screen and (min-device-width:1331px) and (max-device-width:1420px) {
+@media screen and (min-device-width:1331px) and (max-device-width:1440px) {
 
     #home {
         min-height: 100vh;
@@ -499,24 +544,72 @@ h4 {
         font-size: 40px;
     }
 
-    #objective {
-        width: 30%;
-    }
-
     #call-button {
         margin-left: 60px;
         margin-top: 50px;
         display: block;
         width: 155px;
     }
+
+    #objective {
+        width: 30%;
+    }
+
+    .my-experience {
+        height: 30vh;
+    } 
+
+    .my-projects{
+        margin: 50px;
+        width: 300px;
+        height: 230px;
+        border: 2px solid rgb(177, 142, 0);
+        color: rgb(255, 255, 255);
+        border-radius: 50px;
+        transition: 0.7s ease;
+        opacity: 0.9;
+        text-align: center;
+    }
+    
+    .projects-images {
+        width: 295px;
+        height: 100px;
+        border-radius: 47px 47px 0px 0px;
+    } 
+
+    #progress-container {
+        display: grid;
+        grid-template-columns: repeat(4, 200px);
+        grid-template-rows: 200px 200px 200px;
+        gap: 5vw;
+        padding-left: 12vw;
+        padding-top: 50px;
+    }
     
 }
 
 @media screen and (max-device-width:1200px) {
 
+    .name-job-objective {
+        position: relative;
+        bottom: 65px;
+    }
+
+    #myname {
+        font-size: 45px;
+    }
+
+    #objective {
+        font-size: 12px;
+    }
+
     #education .flex-container .stages-education {
         margin-left: auto;
         margin-right:auto ;
+    }
+
+    .my-experience {
+        height: 35vh;
     }
 
     #projects .flex-container .my-projects {
@@ -524,18 +617,18 @@ h4 {
         margin-right:auto ;
     }
 
-    #myname {
-        font-size: 45px;
-    }
-
+    #progress-container {
+        display: grid;
+        grid-template-columns: repeat(4, 200px);
+        grid-template-rows: 200px 200px 200px;
+        gap: 5vw;
+        padding-left: 5vw;
+        padding-top: 50px;
+    } 
 
 }
 
 @media screen and (max-device-width:1010px) {
-
-    .my-experience {
-        height: 30vh;
-    }
 
     #myname {
         font-size: 40px;
@@ -545,37 +638,57 @@ h4 {
         font-size: 30px;
     }
 
+    .my-experience {
+        height: 30vh;
+    }
+
 }
 
 @media screen and (max-device-width:950px) {
 
-        .nav-icon, #du-en {
-            font-size: 18px;
-        }
+    .nav-icon, #du-en {
+        font-size: 18px;
+    }
 
-        #projects .flex-container{
-            width: 94%;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin-left: auto;
-            margin-right:auto ;
-        }
+    #myname {
+        font-size: 35px;
+    }
 
-        #myname {
-            font-size: 35px;
-        }
+    #JobPosition {
+        font-size: 25px;
+    }
 
-        #JobPosition {
-            font-size: 25px;
-        }
+    #projects .flex-container{
+        width: 94%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right:auto ;
+    }
 
 }
 
-@media screen and (max-device-width:912px) {
+@media screen and (max-device-width:913px) {
+
+
+    #objective {
+        font-size: 25px;
+        margin-top: 25px;
+    }
 
     .my-experience {
         height: 20vh;
     }
+
+    #progress-container {
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: 200px 200px 200px;
+        gap: 5vw;
+        padding-left: 13vw;
+        padding-top: 50px;
+        padding-bottom: 150px;
+    } 
 
 }
 
@@ -595,11 +708,6 @@ h4 {
         width: 50%;
     }
 
-    #skills .flex-container {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     #call-button {
         font-size: 18px;
         width: 125px;
@@ -615,6 +723,16 @@ h4 {
 
     }
 
+    #progress-container {
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: 200px 200px 200px;
+        gap: 5vw;
+        padding-left: 9vw;
+        padding-top: 50px;
+        padding-bottom: 150px;
+    } 
+
 }
 
 
@@ -627,14 +745,6 @@ h4 {
         bottom: 65px;
     }
 
-    #objective {
-        font-size: 15px;
-    }
-
-    #objective span {
-        font-size: 35px !important;
-    }
-
     #call-button {
         padding: 10px;
         font-size: 18px;
@@ -643,13 +753,17 @@ h4 {
         margin-bottom: 20px;
     }
 
+    #objective {
+        font-size: 15px;
+    }
+
+    #objective span {
+        font-size: 35px !important;
+    }
+
 }
 
 @media screen and (max-device-width:790px) {
-
-    .my-experience {
-        height: 35vh;
-    }
 
     #call-button {
         font-size: 18px;
@@ -657,6 +771,20 @@ h4 {
         margin-top: 0px ;
         margin-bottom: 40px;
     }
+
+    .my-experience {
+        height: 35vh;
+    }
+
+    #progress-container {
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: 200px 200px 200px;
+        gap: 5vw;
+        padding-left: 7vw;
+        padding-top: 50px;
+        padding-bottom: 150px;
+    } 
 
 }
 
@@ -679,13 +807,13 @@ h4 {
         margin-bottom: 15px;
     }
 
-    #skills .flex-container {
+    #skills #progress-container {
         display: none;
     }
 
     #skills .grid-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 20px;
         position: relative;
         right: 90px;
@@ -698,10 +826,6 @@ h4 {
 
 @media screen and (max-device-width:712px) {
 
-    .my-experience {
-        height: 50vh;
-    }
-
     .nav-icon {
         margin-top: 20px;
         margin-right: 15px;
@@ -713,6 +837,10 @@ h4 {
         width: 80px;
         margin-left: 10px;
         margin-top: -45px;
+    }
+
+    .my-experience {
+        height: 50vh;
     }
 }
 
@@ -750,10 +878,6 @@ h4 {
         height: 40vh;
     }
 
-    #skills .grid-container {
-       padding-left: 75px;
-    }
-
     .navbar-large-screen {
         display: none;
     }
@@ -788,6 +912,10 @@ h4 {
         margin-left: 30px;
     }
 
+    #skills .grid-container {
+        padding-left: 75px;
+     }
+
     #contact-with-me {
         font-size: 22px;
     }
@@ -796,13 +924,43 @@ h4 {
 
 @media screen and (max-device-width:545px) {
 
+    #high-school {
+        margin-top: 55px;
+    }
+
+    #flex-container-column {
+        margin-top: 250px;
+    }
+
+    #grid-container-one-column i {
+        margin-left: 5px;
+    }
+
     #flex-container-column .my-experience {
         width: 400px;
         margin-left: 70px;
     }
 
-    #grid-container-one-column i {
-        margin-left: 5px;
+    #projects {
+        position: relative;
+        bottom: 250px;
+    }
+
+    #skills {
+        position: relative;
+        bottom: 200px;
+    }
+
+    #skills .grid-container {
+        padding-bottom: 20px;
+        position: relative;
+        left: 5vw;
+        width: 50%;
+    }
+
+    .progress-skills a {
+        position: relative;
+        bottom: 16px;
     }
 
 }
@@ -832,33 +990,8 @@ h4 {
         margin-left: 0px;
     }
 
-    #flex-container-column .my-experience {
-        width: 340px;
-    }
-
-    #projects {
-        position: relative;
-        top: 150px;
-    }
-
-    #skills {
-        position: relative;
-        top: 140px;
-    }
-
     .grid-container div span {
         font-size: 15px;
-    }
-
-    .skills-logo {
-        width: 40px;
-        height: 40px;
-        border-radius: 20px;
-    }
-
-    #contact {
-        text-align: center;
-        margin-top: 25px;
     }
 
     #contact .grid-container {
@@ -878,9 +1011,60 @@ h4 {
     }
 
     #flex-container-column .my-experience {
+        width: 340px;
+    }
+
+    #flex-container-column .my-experience {
         width: 300px;
         margin-left: 70px;
         height: 60vh;
+    }
+
+    #projects {
+        position: relative;
+        top: 150px;
+    }
+
+    #skills {
+        position: relative;
+        top: 140px;
+    }
+
+    .skills-logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    #contact {
+        text-align: center;
+        margin-top: 25px;
+    }
+
+}
+
+
+@media screen and (max-device-width:415px) {
+
+    #projects {
+        margin-top: -390px;
+    }
+
+    #skills .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        position: relative;
+        left: -30px;
+        font-size: 15px;
+        padding-bottom: 200px;
+        margin-bottom: -25px;
+    }
+
+    .progress-skills a img {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
     }
 
 }
@@ -925,7 +1109,7 @@ h4 {
 
     .my-experience {
         position: relative;
-        right: 25px;
+        left: 45px;
         transform: scale(0.8);
         margin: auto;
     }
@@ -935,9 +1119,7 @@ h4 {
     }
 
     #skills .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding-left: 180px;
+        padding-left: 90px;
     }
 }
 
@@ -968,28 +1150,12 @@ h4 {
 
     .my-experience {
         position: relative;
-        left: 1px;
+        right: 10px;
         transform: scale(0.8);
         margin: auto;
     }
-    
-    #projects {
-        position: relative;
-        top: -125px;
-    }
-
-    .my-projects {
-        transform: scale(0.8);
-    }
-
-    #skills {
-        position: relative;
-        top: -105px;
-    }
 
     #skills .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding-left: 135px;
+        padding-left: 35px;
     }
 }
